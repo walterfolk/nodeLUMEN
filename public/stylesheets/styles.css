@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+i {
+    cursor: pointer;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+h1 {
+    margin-bottom: 5px;
+    text-shadow: 0 0 15px rgb(255, 173, 22),
+        0 0 25px rgba(253, 195, 36, 0.945),
+        0 0 60px rgba(253, 207, 78, 0.945);
+}
+.margentop {
+    margin-top: 85px;
+}
+/* ===================NAVBAR======================== */
+
+.sombraboton {
+    width: 200px;
+    height: 60px;
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    /* border-top: 1px solid white; */
+}
+
+.sombraboton:hover {
+    color: black;
+    transition: 1s ease;
+    text-shadow: 0 0 15px rgb(255, 173, 22),
+        0 0 25px rgba(253, 195, 36, 0.945),
+        0 0 40px rgba(253, 207, 78, 0.945);
+}
+
+.sombraboton::before {
+    content: "";
+    position: absolute;
+    left: 18%;
+    top: -20px;
+    background: transparent;
+    height: 40%;
+    width: 80%;
+    transform: perspective(1em) rotateX(25deg) scale(1, 0.35);
+    filter: blur(10px);
+    transition: 1s ease;
+}
+
+.sombraboton:hover::before {
+    background: white;
+    top: -10px;
+    box-shadow: 0 0 10px rgb(255, 173, 22),
+        0 0 20px rgba(253, 195, 36, 0.945),
+        0 0 25px rgba(253, 207, 78, 0.945);
+}
+
+.menunav li a {
+    margin-left: 18%;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.icono2 {
+    margin: 5px 0 10px 0;
+    background-color: transparent;
+}
+
+/* =====================SLIDER=============================== */
+
+.carousel-inner img {
+    height: 834px;
+}
+
+
+/* ======================SERVICIOS==================== */
+
+
+.fondoserv {
+    background: rgba(0, 0, 0, 0.5) url(../images/bgimg3.jpg);
+    position: relative;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.servimg {
+    max-width: 100%;
+    box-shadow: 13px 9px 7px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 0% 100% 0% 100% / 50% 50% 50% 50%;
+    position: relative;
+    margin: 10px;
+    transition: 1s ease;
+}
+
+.servimg:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 20px rgb(255, 255, 255),
+        0 0 35px rgba(219, 219, 219, 0.945),
+        0 0 50px rgba(161, 161, 161, 0.945);
+}
+
+.titulos {
+    margin-top: 25px;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.serv {
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 5px;
+    background: #ffffff;
+    box-shadow: inset 0 0 20px rgb(255, 255, 255),
+    inset 0 0 35px rgba(219, 219, 219, 0.945),
+    inset 0 0 50px rgba(161, 161, 161, 0.945);
+    border-radius: 0px 50px 0px 50px;
+    box-sizing: border-box;
+    color: rgb(20, 20, 20);
+    opacity: .8;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+
+}
+
+
+.servicios {
+    text-align: center;
+}
+
+.parrafos {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.servicio {
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    font-weight: 900;
+    height: auto;
+    background: #ffffff;
+    box-shadow: inset 0 0 20px rgb(255, 255, 255),
+    inset 0 0 35px rgba(219, 219, 219, 0.945),
+    inset 0 0 50px rgba(161, 161, 161, 0.945);;
+    opacity: 0.7;
+    margin: 5px;
+    text-align: center;
+    border-radius: 50px 0px 50px 0px;
+    box-sizing: border-box;
+}
+
+
+.galerias {
+    max-width: 100%;
+    border-radius: 0% 100% 0% 100% / 50% 50% 50% 50%;
+    position: relative;
+    margin: 10px;
+    opacity: 1;
+}
+
+
+/* =================================GELERIA==================== */
+
+
+.fondogal {
+    background: rgba(0, 0, 0, 0.5) url(../images/bgimg5.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    position: relative;
+    background-size: cover;
+}
+
+.tarjeta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.imagenes {
+    margin: 10px;
+    width: 550px;
+    height: 350px;
+    background-color: #333;
+    border-radius: 10px;
+    outline: 1px solid rgba(255, 255, 255, 0.5);
+    outline-offset: -8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.tarjetas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: transform 0.75s;
+}
+
+.imagenes:hover .tarjetas {
+    transform: scale(1.15);
+}
+
+/* ===========================================NOVEDADES=================================================== */
+#novedades {
+    overflow: hidden;
+}
+
+#novedades h2 {
+    margin-top: 100px;
+   
+}
+
+#novedades h5 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.novedad {
+    width: 300px;
+    background: rgba(0, 0, 0, .8);
+    color: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    transition: 1.7s ease;
+}
+
+.novedad:hover {
+    color: #fff;
+    background-color: rgb(41, 34, 1);
+    box-shadow: 0 0 15px rgb(255, 173, 22),
+        0 0 25px rgba(253, 195, 36, 0.945),
+        0 0 60px rgba(253, 207, 78, 0.945);
+}
+
+#novedades .row:last-child {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.fondonov {
+    height: 1000px;
+    background: rgba(0, 0, 0, 0.4) url(../images/bgimg2.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    position: relative;
+    background-size: cover;
+}
+
+
+/* ======================================CONTACTO======================= */
+
+textarea {
+    resize: none;
+
+}
+
+.fondocont {
+    height: 800px;
+    background: rgba(0, 0, 0, 0.4) url(../images/bgimg.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    position: relative;
+    background-size: cover;
+}
+
+.boton {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-weight: 600;
+
+}
+
+
+.icono {
+    position: relative;
+    display: inline-flex;
+}
+
+.icono i {
+    font-size: 22px;
+    background-clip: text;
+}
+
+.icono::before,
+.icono::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 15px);
+    visibility: hidden;
+    transition: transform 0.75s;
+}
+
+.icono::after {
+    content: attr(data-tooltip);
+    top: 38px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.icono:hover::before,
+.icono:hover::after {
+    transform: translate(-50%, -5px);
+    visibility: visible;
+}
+
+.mapa {
+    margin-left: 10px;
+    padding: 0;
+
+}
+
+/* ============================PIE====================== */
+
+footer {
+    min-height: 100px;
+}
