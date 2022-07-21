@@ -91,7 +91,7 @@ h1 {
 /* =====================SLIDER=============================== */
 
 .carousel-inner img {
-    height: 834px;
+    height: 80vh;
 }
 
 
@@ -171,7 +171,7 @@ h1 {
     border: 1px solid rgba(255,255,255,0.18);
     border-radius: 0px 50px 0px 50px;
     box-sizing: border-box;
-    margin: 5px;
+    margin: 2px;
     text-align: center;
     border-radius: 50px 0px 50px 0px;
     color: #000;
@@ -187,6 +187,7 @@ h1 {
     margin: 10px;
     opacity: 1;
 }
+
 
 
 /* =================================GELERIA==================== */
@@ -236,7 +237,7 @@ h1 {
 
 /* ===========================================NOVEDADES=================================================== */
 #novedades {
-    overflow: hidden;
+    overflow: scroll;
 }
 
 #novedades h2 {
@@ -283,6 +284,9 @@ h1 {
 
 
 /* ======================================CONTACTO======================= */
+#contacto{
+    overflow: scroll;
+}
 
 textarea {
     resize: none;
