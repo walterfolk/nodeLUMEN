@@ -237,7 +237,7 @@ h1 {
 
 /* ===========================================NOVEDADES=================================================== */
 #novedades {
-    overflow: scroll;
+    overflow: auto;
 }
 
 #novedades h2 {
@@ -285,7 +285,7 @@ h1 {
 
 /* ======================================CONTACTO======================= */
 #contacto{
-    overflow: scroll;
+    overflow: auto;
 }
 
 textarea {
