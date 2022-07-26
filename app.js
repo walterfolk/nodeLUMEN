@@ -31,7 +31,7 @@ app.use(session({
   saveUninitialized:true
 }))
 
-secured = async(req,res,next)=>{
+secured = async function(req,res,next){
   try{
     console.log(req.session.id_usuario);
     if(req.session.id_usuario){

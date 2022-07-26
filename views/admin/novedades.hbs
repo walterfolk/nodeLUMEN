@@ -1,41 +1,45 @@
 <div class="container mt-5">
-    <div class="row">
-        <div class="col">
-            <h4 class="text-uppercase fs-3 text-end">¡Bienvenido {{user}}! <a href="" class="btn btn-danger"><i class="bi bi-box-arrow-right"></i> Cerrar Session</a></h4>
-
-        </div>
+  <div class="row">
+    <div class="col">
+      <h4 class="text-uppercase fs-3 text-end">¡Bienvenido {{user}}! <a href="/admin/login/logout" class="btn btn-danger"><i
+            class="bi bi-box-arrow-right"></i> Cerrar Session</a></h4>
     </div>
-    <div class="row mt-4 text-end">
-        <div class="col"></div>
-           <p class="text-uppercase fs-4 mx-1">Agregar Novedad  
-           <a href=""><i class="bi bi-plus-square btn btn-success"></i></a></p>
-        </div>
+  </div>
+  <div class="row mt-4 text-end">
+    <div class="col">
+      <p class="text-uppercase fs-4 mx-1">Agregar Novedad
+        <a href="/admin/novedades/insertar"><i class="bi bi-plus-square btn btn-success"></i></a>
+      </p>
     </div>
+  </div>
 
-<div class="row">
-    <div class="col mx-5">
-        <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      
-    </tr>
-    
-  </tbody>
-</table>
+
+  <div class="row mt-3">
+    <div class="col mx-5 border border-dark rounded-1 mt-3 border-opacity-50">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Titulo</th>
+            <th scope="col" class="text-end">Editar/Eliminar</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each novedad}}
+          <tr>
+            <th scope="row">{{id}}</th>
+            <td>{{titulo}}</td>
+            <td class="text-end">
+              <a href="/admin/novedades/editar/{{id}}" class="btn btn-primary"><i class="bi bi-pencil-square"></i> Editar</a>
+              <a href="/admin/novedades/delete/{{id}}" class="btn btn-danger"><i class="bi bi-trash3-fill"></i> Eliminar</a>
+            </td>
+
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
     </div>
-</div>
-
-
+  </div>
 
 
 </div>

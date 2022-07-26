@@ -1,10 +1,16 @@
 var express = require('express');
 var router = express.Router();
-var nodemailer = require('nodemailer')
+var nodemailer = require('nodemailer');
+var novedadesModel = require('../models/novedadesModel');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index');
+router.get('/', async function(req, res, next) {
+ 
+  var novedad = await novedadesModel.getNovedades();
+  
+  res.render('index',{
+    novedad
+  });
 });
 
 router.post('/', async function(req, res, next){
@@ -32,7 +38,7 @@ router.post('/', async function(req, res, next){
   })
 
   var info = await transport.sendMail(obj);
-  res.render('index');
+  res.render('index')
   
 })
 

@@ -49,30 +49,47 @@
     <h2 class="fs-1 p-3 mt-3 text-center text-decoration-underline">Contamos con prefesionales capacitados
         para ayudarte a resolver
         tus necesidades en:</h2>
-    <div class="row conteiner-fluid flex-lg-nowrap flex-md-wrap flex-sm-wrap justify-content-sm-center justify-content-md-center pe-5 ps-2 pb-3 mt-5 ms-4 ms-md-3 ms-sm-2">
+    <div
+        class="row conteiner-fluid flex-lg-nowrap flex-md-wrap flex-sm-wrap justify-content-sm-center justify-content-md-center pe-5 ps-2 pb-3 mt-5 ms-4 ms-md-3 ms-sm-2">
         <div class="col-lg-3 col-md-12 servicio">
             <img src="images/trabajador.jfif" alt="instalaciones electricas" class="galerias">
             <h3 class="titulos">Instalación de Luminarias</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, totam! Facere consectetur esse ea delectus enim optio, consequatur rerum alias excepturi, consequuntur quam velit dolorem animi maxime laudantium dolore! Doloremque.
-            Recusandae dicta inventore quasi porro velit, eaque corrupti esse sequi blanditiis quisquam enim eligendi vero iure tempora aperiam exercitationem dolor quam! Delectus asperiores rerum pariatur repellat, neque libero ab impedit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, totam! Facere consectetur esse ea
+                delectus enim optio, consequatur rerum alias excepturi, consequuntur quam velit dolorem animi maxime
+                laudantium dolore! Doloremque.
+                Recusandae dicta inventore quasi porro velit, eaque corrupti esse sequi blanditiis quisquam enim
+                eligendi vero iure tempora aperiam exercitationem dolor quam! Delectus asperiores rerum pariatur
+                repellat, neque libero ab impedit?</p>
         </div>
         <div class="col-lg-3 col-md-12 servicio">
             <img src="images/trabajador2.jfif" alt="controlde instalaciones" class="galerias">
             <h3 class="titulos">Control de Instalaciones Eléctricas</h3>
-           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias tenetur aliquid ipsa suscipit? Cupiditate, culpa quo praesentium accusantium, iusto assumenda omnis, quibusdam molestias aliquam voluptatibus odit possimus facere consequuntur numquam.
-           Saepe illum deserunt est consequuntur fugit impedit deleniti repellat unde quibusdam velit magni eos necessitatibus cum culpa ad dolore voluptatum ut quasi eum, animi reprehenderit. Sunt necessitatibus quae commodi quisquam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias tenetur aliquid ipsa suscipit?
+                Cupiditate, culpa quo praesentium accusantium, iusto assumenda omnis, quibusdam molestias aliquam
+                voluptatibus odit possimus facere consequuntur numquam.
+                Saepe illum deserunt est consequuntur fugit impedit deleniti repellat unde quibusdam velit magni eos
+                necessitatibus cum culpa ad dolore voluptatum ut quasi eum, animi reprehenderit. Sunt necessitatibus
+                quae commodi quisquam!</p>
         </div>
         <div class="col-lg-3 col-md-12 servicio">
             <img src="images/trabajador3.jfif" alt="instalaciones industriales" class="galerias">
             <h3 class="titulos">Instalaciones Eléctricas Industriales</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem rem facilis sunt, assumenda maiores odit nostrum amet laborum repellendus quas delectus, obcaecati ipsum magnam rerum doloribus harum. Id, nisi.
-            Aperiam illo veniam mollitia assumenda sequi earum voluptatem tempora, velit porro, facilis quam laborum delectus debitis nemo qui cumque sint voluptates alias molestias reiciendis iste! Architecto quo reiciendis necessitatibus perspiciatis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem rem facilis sunt, assumenda
+                maiores odit nostrum amet laborum repellendus quas delectus, obcaecati ipsum magnam rerum doloribus
+                harum. Id, nisi.
+                Aperiam illo veniam mollitia assumenda sequi earum voluptatem tempora, velit porro, facilis quam laborum
+                delectus debitis nemo qui cumque sint voluptates alias molestias reiciendis iste! Architecto quo
+                reiciendis necessitatibus perspiciatis?</p>
         </div>
         <div class="col-lg-3 col-md-12 servicio">
             <img src="images/trabajador4.jfif" alt="cableados estructurales" class="galerias">
             <h3 class="titulos">Cableados Estructurales</h3>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda architecto quaerat temporibus quis ex maiores dicta ducimus atque animi nostrum omnis facere expedita, accusamus dolorum tempora aperiam corporis. Natus, quod.
-           Rerum autem doloremque quod voluptatibus praesentium, provident non qui maxime, sint assumenda odit architecto alias repudiandae eligendi quam fugiat incidunt voluptatum, modi ipsum repellendus similique quia? Quia quos incidunt laudantium.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda architecto quaerat temporibus quis ex
+                maiores dicta ducimus atque animi nostrum omnis facere expedita, accusamus dolorum tempora aperiam
+                corporis. Natus, quod.
+                Rerum autem doloremque quod voluptatibus praesentium, provident non qui maxime, sint assumenda odit
+                architecto alias repudiandae eligendi quam fugiat incidunt voluptatum, modi ipsum repellendus similique
+                quia? Quia quos incidunt laudantium.</p>
         </div>
     </div>
 </section>
@@ -108,112 +125,27 @@
 
 <section class="container-fluid pt-1 fondonov border-top boder-3" id="novedades">
     <h2 class="fs-1 p-3 text-center text-decoration-underline">Novedades</h2>
+    
     <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-around">
+            {{#each novedad}}
             <div class="card border-dark mb-3 novedad">
+                
                 <div class="card-header">
-                    <h5>Novedad</h5>
+                    <h5>{{{novedad.titulo}}}</h5>
                 </div>
                 <div class="card-body">
 
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam eius
-                        quas
-                        eligendi, facere quam recusandae quia consequuntur ut illo facilis rem error repellendus autem
-                        blanditiis
-                        voluptas. Praesentium alias aliquam numquam odio debitis fugit labore. Aliquid dolore id eveniet
-                        error
-                        doloremque nemo. Tempora deserunt quisquam error quae obcaecati sequi blanditiis!</p>
+                    <p class="card-text">{{{novedad.cuerpo}}}</p>
                 </div>
+                
             </div>
+            {{/each}}
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-around">
-            <div class="card border-dark mb-3 novedad">
-                <div class="card-header">
-                    <h5>Novedad</h5>
-                </div>
-                <div class="card-body">
 
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam eius
-                        quas
-                        eligendi, facere quam recusandae quia consequuntur ut illo facilis rem error repellendus autem
-                        blanditiis
-                        voluptas. Praesentium alias aliquam numquam odio debitis fugit labore. Aliquid dolore id eveniet
-                        error
-                        doloremque nemo. Tempora deserunt quisquam error quae obcaecati sequi blanditiis!</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-around">
-            <div class="card border-dark mb-3 novedad">
-                <div class="card-header">
-                    <h5>Novedad</h5>
-                </div>
-                <div class="card-body">
 
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam eius
-                        quas
-                        eligendi, facere quam recusandae quia consequuntur ut illo facilis rem error repellendus autem
-                        blanditiis
-                        voluptas. Praesentium alias aliquam numquam odio debitis fugit labore. Aliquid dolore id eveniet
-                        error
-                        doloremque nemo. Tempora deserunt quisquam error quae obcaecati sequi blanditiis!</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-around">
-            <div class="card border-dark mb-3 novedad">
-                <div class="card-header">
-                    <h5>Novedad</h5>
-                </div>
-                <div class="card-body">
-
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam eius
-                        quas
-                        eligendi, facere quam recusandae quia consequuntur ut illo facilis rem error repellendus autem
-                        blanditiis
-                        voluptas. Praesentium alias aliquam numquam odio debitis fugit labore. Aliquid dolore id eveniet
-                        error
-                        doloremque nemo. Tempora deserunt quisquam error quae obcaecati sequi blanditiis!</p>
-                </div>
-            </div>
-        </div>
-         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-around">
-            <div class="card border-dark mb-3 novedad">
-                <div class="card-header">
-                    <h5>Novedad</h5>
-                </div>
-                <div class="card-body">
-
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam eius
-                        quas
-                        eligendi, facere quam recusandae quia consequuntur ut illo facilis rem error repellendus autem
-                        blanditiis
-                        voluptas. Praesentium alias aliquam numquam odio debitis fugit labore. Aliquid dolore id eveniet
-                        error
-                        doloremque nemo. Tempora deserunt quisquam error quae obcaecati sequi blanditiis!</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-around">
-            <div class="card border-dark mb-3 novedad">
-                <div class="card-header">
-                    <h5>Novedad</h5>
-                </div>
-                <div class="card-body">
-
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam eius
-                        quas
-                        eligendi, facere quam recusandae quia consequuntur ut illo facilis rem error repellendus autem
-                        blanditiis
-                        voluptas. Praesentium alias aliquam numquam odio debitis fugit labore. Aliquid dolore id eveniet
-                        error
-                        doloremque nemo. Tempora deserunt quisquam error quae obcaecati sequi blanditiis!</p>
-                </div>
-            </div>
-        </div>
-        
     </div>
-    
+   
 </section>
 
 <!-- =================================CONTACTO=========================== -->
@@ -221,35 +153,36 @@
 <section class="container-fluid pt-4 fondocont border-top boder-3" id="contacto">
     <h2 class="fs-1 p-3 text-center text-decoration-underline margentop">Contacto</h2>
     <form action="/" method="post">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="mb-3">
-                <label for="nombre" class="form-label text-white text-decoration-underline">Nombre:</label>
-                <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label text-white text-decoration-underline">Nombre:</label>
+                    <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label text-white text-decoration-underline">Apellido:</label>
+                    <input type="text" name="apellido" class="form-control" id="apellido" placeholder="Apellido"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label text-white text-decoration-underline">Teléfono:</label>
+                    <input type="text" name="tel" class="form-control" id="telefono" placeholder="Teléfono" required>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="apellido" class="form-label text-white text-decoration-underline">Apellido:</label>
-                <input type="text" name="apellido" class="form-control" id="apellido" placeholder="Apellido" required>
-            </div>
-            <div class="mb-3">
-                <label for="telefono" class="form-label text-white text-decoration-underline">Teléfono:</label>
-                <input type="text" name="tel" class="form-control" id="telefono" placeholder="Teléfono" required>
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-122">
-            <div class="mb-3">
-                <label for="email" class="form-label text-white text-decoration-underline">E-mail:</label>
-                <input type="email" name="email" class="form-control" id="email" placeholder="E-mail" required>
-                <label for="comentarios" class="text-white mt-4 text-decoration-underline">Comentarios:</label>
-                <textarea class="form-control text-dark" name="comentario" placeholder="Deje su comentario aquí"
-                    id="comentarios"></textarea>
+            <div class="col-lg-6 col-md-6 col-sm-122">
+                <div class="mb-3">
+                    <label for="email" class="form-label text-white text-decoration-underline">E-mail:</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="E-mail" required>
+                    <label for="comentarios" class="text-white mt-4 text-decoration-underline">Comentarios:</label>
+                    <textarea class="form-control text-dark" name="comentario" placeholder="Deje su comentario aquí"
+                        id="comentarios"></textarea>
 
-                <button type="submit" class="mt-3 p-3 bg-primary boton"><span>Enviar Mensaje</span></button>
-            </div>
+                    <button type="submit" class="mt-3 p-3 bg-primary boton"><span>Enviar Mensaje</span></button>
+                </div>
 
-        </div>
-        </form>
-        
+            </div>
+    </form>
+
     </div>
     <div class="row d-flex flex-lg-nowrap flex-md-wrap flex-sm-wrap">
         <div class="col-lg-6 col-md-6 col-sm-12 pe-4 mapa">
