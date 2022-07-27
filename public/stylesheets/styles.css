@@ -237,7 +237,7 @@ h1 {
 
 /* ===========================================NOVEDADES=================================================== */
 #novedades {
-    overflow: auto;
+    overflow: scroll;
 }
 
 #novedades h2 {
@@ -285,7 +285,7 @@ h1 {
 
 /* ======================================CONTACTO======================= */
 #contacto{
-    overflow: auto;
+    overflow: scroll;
 }
 
 textarea {
@@ -318,7 +318,7 @@ textarea {
 }
 
 .icono i {
-    font-size: 22px;
+    font-size: 1.4rem;
     background-clip: text;
 }
 

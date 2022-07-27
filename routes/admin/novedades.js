@@ -65,7 +65,7 @@ router.post('/editar', async function(req,res,next){
             
         }
 
-        if(req.body.titulo != "" && req.body.cuerpo != ""){
+        if( req.body.titulo != "" && req.body.cuerpo != "" && "/admin/novedades"){
             await novedadesModel.updateNovedad(obj, req.body.id)
             res.redirect('/admin/novedades')
         } else {
